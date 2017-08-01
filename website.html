@@ -1,38 +1,106 @@
+
 <!DOCTYPE html>
 <html>
-<title>eleven eleven</title>
-<meta charset="UTF-8">
+<title>sydneyhuynh</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<style>
-body,h1 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-.bgimg {
-    background-image: url('http://s4.aconvert.com/convert/p3r68-cdx67/5vqxt-pp0ne.jpg');
-    min-height: 100%;
-    background-position: center;
-    background-size: cover;
-}
-</style>
 <body>
 
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  <!--<div class="w3-display-topleft w3-padding-large w3-xlarge">
-    Logo
-  </div> -->
-  <div class="w3-display-top">
-    <h1 class="w3-large w3-animate-top w3-center">COMING SOON</h1>
-    <hr class="w3-border-grey" style="margin:auto;width:10%">
-    <p class="w3-small w3-center">14 days left</p>
+<div class="w3-container">
+  <!-- <h2>Active Tabs</h2> -->
+  <!-- <p>To highlight the current tab/page the user is on, add a color class, and use JavaScript to update the active link.</p> -->
+  <h2>                        </h2>
+
+  <div class="w3-bar w3-black">
+    <button class="w3-bar-item w3-button tablink w3-purple" onclick="openCity(event,'home')">home</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'about')">about</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'portfolio')">portfolio</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'resume')">resume</button>
   </div>
-  <div class="w3-display-bottomleft w3-padding-large">
-         </a>
+  
+  <div id="home" class="w3-container w3-border city">
+   
+	  <!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+padding:60px;
+}
+h1 {
+    color: white;
+    text-align: center;
+    font-family:Brush Script MT, cursive;
+    font-size: 90px;
+    position: absolute;
+    top: 330px;
+    left: 510px;
+}
+p {
+    font-family: verdana;
+    font-size: 20px;
+    text-align: center;
+    color: black
+.image{
+	position: center;
+    
+    
+}
+</style>
+<h1> Sydney <br>     Huynh</br></h1>
+<img src="https://cdn.dribbble.com/users/431675/screenshots/2557229/attachments/506482/free_purple_madness_by_stella.png" alt="floral" style="width:1050px;height:750px;"> 
+
+
+  </div>
+
+  <div id="about" class="w3-container w3-border city" style="display:none">
+    <h2>about me</h2>
+	  <p2>  </p2>
+	 
+  </div>
+
+  <div id="portfolio" class="w3-container w3-border city" style="display:none">
+    <h2>portfolio</h2>
+    <p2>   </p2>
+      
+    
+  </div>
+    
+  <div id="resume" class="w3-container w3-border city" style="display:none">
+    <h2>resume</h2>
+    <p>resume</p>
+  </div> 
   </div>
 </div>
 
+<script>
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-purple", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-purple";
+}
+</script>
+
 </body>
 </html>
+
+
+
+
+  <!--.contain-icon:last-of-type {
+    margin-right: 0;
+  }
+} -->
+
+
 
 <!DOCTYPE html>
 <html>
@@ -40,13 +108,17 @@ body, html {height: 100%}
     <div class="contain-footer-info">
      <span class="made-with">made with</span>
      <svg class="by-heart" version="1.1" width="50px" height="50px" viewBox="0 0 90.65 85.04">
-        <path class="by-heart-path" fill="none" stroke="#0a1b77" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+        <path class="by-heart-path" fill="none" stroke="#77258c" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
         M45.137,23.041c4.912-24.596,40.457-27.775,42.128-0.435c1.398,22.88-21.333,40.717-42.128,50.522 M45.137,23.041
         C40.225-1.555,5.057-4.734,3.387,22.606c-1.398,22.88,20.955,40.717,41.75,50.522"/> 
       </svg> 
-      <span class="by">by sydney, rajul, zoe, and simone</span>
+      <span class="by">by sydney, rajul, soe, and simone</span>
     </div>
   </footer>
+  
+
+<!DOCTYPE html>
+<html>
 <body>
 <style>
 .by-heart-path {
@@ -75,6 +147,4 @@ body, html {height: 100%}
     display: block;
     margin-right: 0;
   }
-  </stlye>
-  </body>
-  </html>
+
