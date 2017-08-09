@@ -183,7 +183,7 @@ input[type=text], input[type=password] {
 /* Set a style for all buttons */
 button {
     background-color: rgb(25,25,112);
-    color: white;
+    color:white;
     font: Raleway, sans-serif; 
     padding: 24px 30px;
     margin: 16px 0;
@@ -261,7 +261,7 @@ button {
 </style>
 <body>
 
-<h2><font face = "Raleway, sans-serif" color = fffff size = "10" ><center>Login</center></font></h2>
+<h2><font face = "Raleway, sans-serif" color = fffff size = "6" ><center>LOGIN</center></font></h2>
 
 <button onclick="document.getElementById('id03').style.display='block'" style="width:auto;">Sign Up</button>
 
@@ -277,8 +277,9 @@ button {
 
       <label><font face ="Raleway, sans-serif" size = "5" color = 00008B ><b>Repeat Password</font></font></label>
       <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-      <input type="checkbox" checked="checked"> Remember me
-      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+      <input type="checkbox" checked="checked"> 
+      <span style="color:#808080">Remember me</span>
+      <p style="color:#808080">By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 
       <div class="clearfix">
         <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
@@ -447,7 +448,8 @@ span.psw {
     <input type="password" placeholder="Enter Password" name="psw" required>
         
       <button type="submit">Login</button>
-      <input type="checkbox" checked="checked"> Remember me
+      <input type="checkbox" checked="checked"> 
+      <span style="color:#808080"> Remember me </span>
     </div>
 
     <div class="container" style="background-color:#f1f1f1">
